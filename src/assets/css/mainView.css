@@ -1,0 +1,555 @@
+/* roughly sytling for all components in mainView */
+
+#header {
+    height: 8vh;
+    width: 100vw;
+    background-color: #333;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+main {
+    margin-top: 0;
+    width: 100vw;
+    margin: 8vh 0 0 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+nav,
+footer {
+    font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+
+body {
+    font-size: 90%;
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+}
+
+h2 {
+    margin: 0;
+    vertical-align: middle;
+    font-size: 1.8em;
+    color: #efefef
+}
+
+button {
+    border: none;
+}
+
+input {
+    outline: none;
+    height: 2.5em;
+    margin-left: 0.5em
+}
+
+
+/* header bar components */
+
+div.headerBlock {
+    margin: 0;
+    padding: 0;
+    height: 8vh;
+    display: inline-block;
+}
+
+div#logo {
+    position: absolute;
+    left: 2vw;
+    top: 2vh;
+    width: 10vw;
+    cursor: pointer;
+}
+
+div#pageBtnsWrap {
+    position: absolute;
+    right: 1vw;
+    width: 30vw;
+}
+
+div.pageSwitchingBtn {
+    width: 3vw;
+    float: right;
+    margin-top: 1em !important;
+    margin-left: 3em !important;
+    color: white;
+    font-size: 90%;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+div#pageSwitchingBtn_checkout {
+    width: 5vw;
+}
+
+img.pageBtnIcon {
+    height: 3vh;
+}
+
+p.pageBtnText {
+    margin: 0;
+    margin-top: 0.2em
+}
+
+input#searchContent {
+    display: inline-block;
+    height: 5vh;
+    width: 30vw;
+    text-align: left;
+    margin: 1.5vh auto;
+    border-radius: 0.1em;
+    border-style: hidden;
+    padding: 0 0 0 2vh;
+    opacity: 0.6;
+}
+
+#submitSearch {
+    display: inline-block;
+    width: 5vw;
+    height: 5vh;
+    background-color: #fff;
+    margin-left: -.3em;
+    border: none;
+    border-radius: 0.1em;
+    cursor: pointer;
+}
+
+
+/* main body under header
+swtiching between: main/search/item states */
+
+
+/* main state items */
+
+.homeStateBlock {
+    display: inline-block;
+    width: 35vw;
+    margin: 0 4vw;
+    text-align: left;
+}
+
+.pageTitles {
+    margin-top: 1vh;
+}
+
+.pageTitles {
+    margin: 2vh 0 3vh 0vh;
+    font-size: 150%;
+    text-align: center;
+    font-weight: bold;
+    color: #777;
+    text-transform: uppercase;
+}
+
+div.rightWrap {
+    margin: 0 0 0 0.8vw;
+    display: inline-block;
+    width: 18vw;
+    height: 23vh;
+    vertical-align: top;
+    position: relative;
+}
+
+p.homePhoneTitle {
+    color: blue;
+    font-size: 110%;
+    margin: 0.5em 0 0 0;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+p.homePhoneTitle:hover {
+    text-decoration: underline;
+}
+
+p.homePhoneRating {
+    display: block;
+    position: absolute;
+    margin: 0;
+    bottom: 0.5em;
+}
+
+
+/* search state items */
+
+div.searchPhoneBlockHeader {
+    height: 20vh;
+    margin: 0;
+    top: 8vh;
+    width: 100vw;
+    position: fixed;
+    text-align: center;
+    background-color: #efefef;
+    z-index: 90;
+}
+
+div.itemState {
+    height: 5vh;
+}
+
+p.searchStateText {
+    font-size: 120%;
+    margin: 0
+}
+
+p.backBtn {
+    position: absolute;
+    left: 0.5vw;
+    top: 1vh;
+    padding-top: 1em;
+    cursor: pointer;
+}
+
+
+/* phone filter components */
+
+div#filterWrap {
+    margin: 0;
+    padding: 0;
+}
+
+.filterText {
+    display: inline-block;
+    width: 5vw !important;
+    margin: 0;
+}
+
+#brandDropdown {
+    width: 10vw;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 5vh;
+}
+
+.el-dropdown-selfdefine {
+    width: 100%;
+}
+
+#priceRangeSlider {
+    width: 60vw;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sliderMaxPrice {
+    width: 50vw;
+}
+
+#submitPriceFilter {
+    border: none;
+    background-color: #48f;
+    color: #efefef;
+    margin: 0.4em 0;
+    height: 5vh;
+    width: 8vw;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+
+
+/* searching results */
+
+div#searchWrap {
+    margin: 18vh 0 0 0;
+    background-color: #efefef;
+}
+
+div.singleItemBlock {
+    display: inline-block;
+    position: relative;
+    width: 22vw;
+    margin: 0.5em 0.2em 1em 0.2em;
+    background-color: rgba(255, 255, 255, .5);
+    height: 68vh;
+    vertical-align: middle;
+    border: #dedede 0.1em solid;
+    text-align: center;
+    cursor: pointer;
+}
+
+img.searchThumbnail {
+    width: 13vw;
+    height: 27vh;
+    margin-top: 2vh
+}
+
+p.searchPhoneTitle {
+    font-size: 110%;
+    padding: 0 0.2em;
+}
+
+div.bottomWrap {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    bottom: 0.2em;
+}
+
+p.searchDetailText {
+    margin: 0.5em 0;
+    font-size: 105%;
+}
+
+p.searchDetailPrice {
+    color: coral;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+
+/* item state items */
+
+div.itemstate {
+    height: 5vh;
+}
+
+.phoneDetails_main {
+    width: 85vw;
+    margin: 8vh auto 0 auto;
+    padding-top: 3vh;
+    background-color: #fff;
+    border-radius: 0.3em;
+}
+
+#description_review_title {
+    border-top: #333 0.3px solid;
+    margin-top: 2em;
+    padding-top: 0.5em;
+}
+
+.phoneDetails_horizontalBlock {
+    display: inline-block;
+    width: 30vw;
+    height: 53vh;
+    vertical-align: top;
+    font-size: 110%;
+}
+
+.phoneDetails_verticalBlock {
+    display: block;
+    text-align: left;
+    padding: 4vh 8vw
+}
+
+#phoneDetails_backHeader {
+    display: block;
+    width: 100vw;
+    position: fixed;
+    top: 14vh;
+    left: 0;
+    height: 4vh;
+    background-color: lightcoral;
+    color: white;
+    font-size: 150%;
+    text-align: left;
+    padding: 0.5em 0 0 2em;
+    z-index: 99;
+}
+
+#phoneDetails_phoneImg {
+    width: 100%;
+    height: 100%;
+}
+
+.phoneDetails_phoneTitle {
+    font-size: 165%;
+    font-weight: bold;
+    margin-top: 3vh;
+}
+
+.narrow {
+    width: 80%;
+    margin: 0 auto 2vh auto;
+}
+
+#phoneDetails_descriptionTitle {
+    border-bottom: black 1px solid;
+    margin-top: 0;
+    padding-bottom: 0.3em
+}
+
+#phoneDetails_description {
+    width: 35vw;
+    padding-top: 0.5em;
+    padding-left: 2em;
+    font-size: 120%
+}
+
+#phoneDetails_stock {
+    border-bottom: black 1px solid;
+    padding-bottom: 1em
+}
+
+#phoneDetails_price {
+    font-size: 140%;
+    color: coral;
+    display: inline-block;
+}
+
+#phoneDetails_addingPhoneSubtotal {
+    font-size: 120%;
+    color: coral;
+    font-weight: bold;
+}
+
+.phoneDetails_btn {
+    width: 15vw;
+    height: 5vh;
+    margin-top: 3vh;
+    border: none;
+    font-size: 90%;
+    margin-left: 2em;
+    float: right;
+    vertical-align: top;
+    cursor: not-allowed
+}
+
+#phoneDetails_add {
+    background-color: rgb(253, 141, 131);
+    color: white;
+    cursor: pointer;
+}
+
+#disablingLayer {
+    width: 80vw;
+    height: 800vh;
+    background-color: white;
+    position: fixed;
+    top: 18vh;
+    left: 10vw;
+}
+
+div.horizontalBlockAddToCart {
+    display: inline-block;
+    height: 30vh;
+    width: 20vw;
+    margin: 0 auto;
+    vertical-align: top;
+    text-align: left;
+    font-size: 115%;
+}
+
+.phoneDetails_phoneBrandStyler {
+    text-transform: uppercase;
+}
+
+#addingShoppingCartBtnWrap {
+    margin-top: 1vh;
+    padding-bottom: 5vh
+}
+
+.addingShoppingCartBtn {
+    width: 20vw;
+    height: 6vh;
+    margin: 0vh 1vw;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button#confirmAdding {
+    background-color: rgb(253, 141, 131);
+    color: #fff;
+}
+
+#phoneDetails_addingPhoneThumbnail {
+    width: 10vw;
+    height: 25vh;
+    margin-left: 5vw;
+}
+
+#phoneLists {
+    margin-top: 15vh;
+    width: 100vw;
+    text-align: center;
+}
+
+div.homeSinglePhone {
+    height: 25vh;
+    width: 35vw;
+    margin: 0.5vh 0;
+}
+
+img.homePhoneThumbnail {
+    height: 23vh;
+    width: 15vw;
+    display: inline-block;
+}
+
+.commentWrapping {
+    border-top: #aaa solid 0.1px;
+    border-bottom: #aaa solid 0.1px;
+    width: 65vw;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.reviewerInnerWrap {
+    vertical-align: top;
+    width: 15vw;
+    display: inline-block;
+}
+
+.reviewer {
+    font-weight: bold;
+}
+
+.rating {
+    font-size: 120%;
+}
+
+.commentInnerWrap {
+    vertical-align: top;
+    width: 45vw;
+    display: inline-block;
+    font-size: 110%;
+}
+
+.invalidNumberAlert {
+    background-color: #890F0D !important;
+    color: white !important;
+}
+
+.fullCommentBtn {
+    cursor: pointer
+}
+
+.fullCommentBtn:hover {
+    text-decoration: underline;
+}
+
+.showComments {
+    width: 10vw;
+    height: 5vh;
+    margin-top: 3vh;
+    border: none;
+    font-size: 90%;
+    margin-left: 2em;
+    vertical-align: top;
+    cursor: pointer;
+    color: #333;
+}
+
+.blankbgc {
+    background-color: transparent;
+    border: #aaa 0.2px solid;
+    border-radius: 0.3px;
+}
+
+.brandDpn {
+    color: #333;
+    background-color: transparent;
+    border: #aaa solid 0.2px;
+    border-radius: 0.3em;
+    height: 5vh;
+    width: 8vw;
+}
